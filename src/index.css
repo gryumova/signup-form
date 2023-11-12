@@ -1,0 +1,25 @@
+body {
+    background: rgb(67,50,105);
+    background: radial-gradient(circle, rgba(67,50,105,1) 0%, rgba(29,24,39,1) 100%);
+}
+#root {
+    padding: 0;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto auto auto;
+}
+
+@media (min-width: 768px) {
+    #root {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+    }
+}
