@@ -4,26 +4,8 @@ import Content from './components/Content';
 import Stars from './components/Stars';
 import Toggle from './components/Toggle'
 
-// const App = () => {
-//     const [theme, setTheme] = useState('light');
-//     const themeToggler = () => {
-//         console.log(theme);
-//         theme === 'light' ? setTheme('dark') : setTheme('light')
-//     }
-//     return (
-//         <>
-//             <Stars theme={theme}/>
-//             <Content/>
-//             <SignUpFrom/>
-//             <Toggle 
-//                 theme={theme}
-//                 toggleTheme={() => themeToggler()}
-//             />
-//         </>
-//     )
-// }
-
-// export default App;
+const DarkBody = { background: 'radial-gradient(circle, black 100%, black 100%);'}
+const LightBody = { background: 'radial-gradient(circle, rgba(67,50,105,1) 0%, rgba(29,24,39,1) 100%);'}
 
 export default class App extends Component {
     constructor(props) {
@@ -36,6 +18,12 @@ export default class App extends Component {
 
     themeToggler() {
         this.state.theme === 'light' ? this.setState({ theme: 'night' }): this.setState({ theme: 'light'})
+    }
+
+    changeBodyColor() {
+        const styleBody = this.state.theme === 'light' ? LightBody: DarkBody;
+        document.body.style.background = styleBody.background;
+        console.log(document.body.style.background);
     }
 
     render() {

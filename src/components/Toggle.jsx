@@ -2,13 +2,19 @@ import React from 'react'
 import { func, string } from 'prop-types'
 import styled from "styled-components"
 
+
 const ThemeChange = styled.div`
 
     position: absolute;
     bottom: 10px;
 
-`
+    @media (max-width: 768px) {
+        top: 10px;
+        bottom: auto;
+        left: 10px;
+    }
 
+`
 
 const Button = styled.button`
   

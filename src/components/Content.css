@@ -14,7 +14,9 @@
 
 @media (max-width: 768px) {
     .astronaut {
-        display: none;
+        width: 150px;
+        margin: auto;
+        padding-left: 70px;
     }
 }
 

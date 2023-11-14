@@ -4,14 +4,14 @@ import "./SignAppForm.css"
 const lightColor = "#8664D0"
 const darkColor = "#d0b164"
 
-const lightThemeTitle = {'background-color': lightColor,
-                        'box-shadow': '0px 0.45em 0px 0px #2f214c'}
+const lightThemeTitle = {'backgroundColor': lightColor,
+                        'boxShadow': '0px 0.45em 0px 0px #2f214c'}
                         
-const darkThemeTitle = {'background-color': darkColor, 
-                        'box-shadow': '0px 0.45em 0px 0px #8a7644'}
+const darkThemeTitle = {'backgroundColor': darkColor, 
+                        'boxShadow': '0px 0.45em 0px 0px #8a7644'}
 
-const lightSubmit = {'background-color': lightColor}
-const darkSubmit = {'background-color': darkColor}
+const lightSubmit = {'backgroundColor': lightColor}
+const darkSubmit = {'backgroundColor': darkColor}
 
 
 export default class SignUpFrom extends Component {
