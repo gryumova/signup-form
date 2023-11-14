@@ -13,7 +13,7 @@ Users should be able to:
 ## Screenshot
 
 ### Desktop
-![](./readme/screen.png)
+<img width="200px" src="img.png" alt="qr"/>
 
 ### Mobile
 ![](./readme/mobileScreen.png)
